@@ -1,39 +1,75 @@
+
+
 <!DOCTYPE html>
 <html>
   <head>
+    <link  href="style.css" rel="stylesheet">
     <title>AllerRecipes</title>
+    
 
   </head>
-  <body style="background: lightpink;">
+  <body>
+   
     <h1>AllerRecipes</h1>
     <hr>
-    <p style="font: cursive;"> Welcome to AllerRecipe, where we are dedicated to helping those with food allergies enjoy delicious, nutritious meals that cater to their specific dietary needs. Our platform provides a vast array of recipes that are free from common allergens such as gluten, dairy, nuts, and soy, so you can feel confident in the meals you are preparing and serving. Whether you're a seasoned cook or just starting out, our recipes are easy to follow and include step-by-step instructions to make mealtime a breeze. We believe that food allergies should never stand in the way of enjoying great tasting meals, and with our allergy-friendly recipes, you'll have a variety of options to choose from for breakfast, lunch, dinner and beyond. So come on in, discover new recipes, and see for yourself how eating allergy-friendly can be both satisfying and delicious!</p>
-
-    <p>Select your allergies:</p>
-    <form>
-      <input style="color: lightcoral; font: fantasy;" type="checkbox" name="allergies" value="gluten"> Gluten<br>
-      <input type="checkbox" name="allergies" value="dairy"> Dairy<br>
-      <input type="checkbox" name="allergies" value="nuts"> Nuts<br>
-      <input type="checkbox" name="allergies" value="soy"> Soy<br>
-      <input type="checkbox" name="allergies" value="sesame"> sesame<br>
-      <input type="checkbox" name="allergies" value="eggs"> eggs<br>
-    <p>Select prefable types of foods:<p>
-        <form>
-          <input style="color: lightcoral; font: fantasy;" type="checkbox" name="pFoods" value="meatmeals"> meat meals<br>
-          <input style="color: lightcoral; font: fantasy;" type="checkbox" name="pFoods" value="dairy meals"> dairy meals<br>
-          <input style="color: lightcoral; font: fantasy;" type="checkbox" name="pFoods" value="snacks"> snacks<br>
-          <input style="color: lightcoral; font: fantasy;" type="checkbox" name="pFoods" value="desserts"> desserts
-          <br>
-        </form>
+    <p > Welcome to AllerRecipe, where we are dedicated to helping those with food allergies enjoy delicious, nutritious meals that cater to their specific dietary needs. Our platform provides a vast array of recipes that are free from common allergens such as gluten, dairy, nuts, and soy, so you can feel confident in the meals you are preparing and serving. Whether you're a seasoned cook or just starting out, our recipes are easy to follow and include step-by-step instructions to make mealtime a breeze. We believe that food allergies should never stand in the way of enjoying great tasting meals, and with our allergy-friendly recipes, you'll have a variety of options to choose from for breakfast, lunch, dinner and beyond. So come on in, discover new recipes, and see for yourself how eating allergy-friendly can be both satisfying and delicious</p>
+    <br>
+ 
+      <input type="checkbox" name="allergies" id = gluten value="gluten"> Gluten<br>
+      <input type="checkbox" name="allergies" id = dairy value="dairy"> Dairy<br>
+      <input type="checkbox" name="allergies" id = nuts value="nuts"> Nuts<br>
+      <input type="checkbox" name="allergies" id = soy value="soy"> Soy<br>
+      <input type="checkbox" name="allergies" value = sesame id = sesame value="sesame"> sesame<br>
+      <input type="checkbox" name="allergies" id = eggs value="eggs"> eggs<br>
+    
     </form>
-    <button>submit</button>
+    <button id="submit" type="button" value= "get recipes!" onclick= "getRecipes()">submit</button>
     
-    <div id="recipes"></div>
-    
+ 
+   <script>
+  function getRecipes() {
+    if (
+      document.getElementById("gluten").checked) {
+      document.write("<p> Here is a gluten free cookie recipe: <hr> gluten-free 1:1 baking flour blend (we reccommend King Arhur Flour) <br> 1  1/2 cups flour <br> 1 1/2 teaspoons kosher salt<br> 1/2 teaspoon baking soda <br> 1/2 teaspoon baking powder  <br> 1/2 cup vegetable shortening (palm) <br> 1/2 cup packed brown sugar <br>1/2 cup granulated sugar <br>  1/3 cup water, at room temperature <br>  1 to 2 tablespoons vanilla extract");
+
+      
+     } else if (
+      document.getElementById("nuts").checked) {
+      document.write(
+        "<p> Here is a nut free cookie recipe:<hr> 1  1/2 cups flour <br> 1 1/2 teaspoons kosher salt<br> 1/2 teaspoon baking soda <br> 1/2 teaspoon baking powder  <br> 1/2 cup vegetable shortening (palm) <br> 1/2 cup packed brown sugar <br>1/2 cup granulated sugar <br>  1/3 cup water, at room temperature <br>  1 to 2 tablespoons vanilla extract");
+
+      
+     } else if (document.getElementById("dairy").checked) {
+      document.write(
+        "<p> Here is a dairy free cookie recipe:<hr> 1  1/2 cups flour <br> 1 1/2 teaspoons kosher salt<br> 1/2 teaspoon baking soda <br> 1/2 teaspoon baking powder  <br> 1/2 cup vegetable shortening (palm) <br> 1/2 cup packed brown sugar <br>1/2 cup granulated sugar <br>  1/3 cup water, at room temperature <br>  1 to 2 tablespoons vanilla extract");
+
+      
+     } else if (document.getElementById("soy").checked) {
+      document.write(
+        "<p> Here is a soy free cookie recipe:<hr> 1  1/2 cups flour <br> 1 1/2 teaspoons kosher salt<br> 1/2 teaspoon baking soda <br> 1/2 teaspoon baking powder  <br> 1/2 cup vegetable shortening (palm) <br> 1/2 cup packed brown sugar <br>1/2 cup granulated sugar <br>  1/3 cup water, at room temperature <br>  1 to 2 tablespoons vanilla extract");
+
+      
+     } else if (document.getElementById("sesame").checked) {
+      document.write(
+        "<p> Here is a sesame free cookie recipe :<hr> 1  1/2 cups flour <br> 1 1/2 teaspoons kosher salt<br> 1/2 teaspoon baking soda <br> 1/2 teaspoon baking powder  <br> 1/2 cup vegetable shortening (palm) <br> 1/2 cup packed brown sugar <br>1/2 cup granulated sugar <br>  1/3 cup water, at room temperature <br>  1 to 2 tablespoons vanilla extract");
+			
+     } else if (document.getElementById("eggs").checked) {
+      document.write(
+        "<p> Here is an egg free cookie recipe:<hr> 2 cups flour <br> 1 1/2 teaspoons kosher salt<br> 1/2 teaspoon baking soda <br> 1/2 teaspoon baking powder  <br> 1/2 cup vegetable shortening (palm) <br> 1/2 cup packed brown sugar <br>1/2 cup granulated sugar <br>  1/3 cup water, at room temperature <br>  1 to 2 tablespoons vanilla extract");
+  	}	
+
+      
+
+
+  }
    
+
+
+   </script>
+  
        
         
     
-    </script>
   </body>
+
 </html>
