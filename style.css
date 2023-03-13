@@ -1,20 +1,18 @@
 body {
-	background: lightpink; ;
+	background-image: URL(AllerBackground.png) ;
 }
 
 h1{
-	color: hotpink;
+	
 }
 
 p {
 	color: black ; font-size: large; background: white; font-family: fantasy;
 }
 
-p {
-	background: lightpink;
-}
+
 
 form {
-	font-size: x-large; color:black;
+	font-size: x-large; color:black; font-family: fantasy;
 }
 
