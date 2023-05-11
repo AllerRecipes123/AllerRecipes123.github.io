@@ -1,6 +1,7 @@
 body {
 	background-image: url(Allergy.png) ;
 }
+
 ul {
   margin: 0;
   padding: 0;
@@ -24,12 +25,12 @@ h1{
 }
 
 p {
-	color: black ; font-size: large;  font-family: fantasy;
+	color: black ; font-size: large;  font-family: Jazz LET, fantasy;
 }
 
 
 
 form {
-	font-size: x-large; color:black; font-family: fantasy;
+	font-size: x-large; color:black; font-family: Jazz LET, fantasy;
 }
 
